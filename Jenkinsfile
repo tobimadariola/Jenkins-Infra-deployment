@@ -16,7 +16,7 @@ pipeline {
                   sh "terraform init"
                   sh "terraform validate"
                   sh "terraform plan"
-                  sh " terraform destroy --auto-approve"
+                  sh " terraform approve --auto-approve"
             }
         }
                
